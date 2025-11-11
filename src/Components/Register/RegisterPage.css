@@ -1,0 +1,97 @@
+/* 🌟 Register Page */
+.register-wrapper {
+  background: linear-gradient(135deg, #ffb703, #fb8500);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 🧾 Register Card */
+.register-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 40px 35px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+/* ✨ Title */
+.register-title {
+  font-weight: 800;
+  color: #222;
+}
+
+/* 🧠 Input Fields */
+.input-group {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fb8500;
+}
+
+.input-group input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 12px 10px 38px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #fb8500;
+  box-shadow: 0 0 8px rgba(251, 133, 0, 0.3);
+}
+
+/* 🟠 Button */
+.btn-warning {
+  background: linear-gradient(90deg, #ffb703, #fb8500);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  background: linear-gradient(90deg, #ffa600, #ff6d00);
+  box-shadow: 0 4px 10px rgba(255, 165, 0, 0.4);
+}
+
+/* 🧡 Link Hover */
+a.text-warning:hover {
+  text-decoration: underline;
+}
+
+/* 🔥 Fade Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  .register-card {
+    padding: 30px 20px;
+  }
+
+  .register-title {
+    font-size: 1.6rem;
+  }
+}
