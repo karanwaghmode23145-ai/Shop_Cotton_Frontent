@@ -1,0 +1,75 @@
+/* 🌟 Shop Features Section */
+.shopfeatures-wrapper {
+  background: linear-gradient(135deg, #fff8f0, #ffe6c4);
+  border-radius: 0;
+  text-align: center;
+  overflow: hidden;
+  padding: 70px 0;
+}
+
+/* 🧱 Feature Card */
+.feature-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  cursor: default;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔘 Icon Styling */
+.icon-box {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffb703, #fb8500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(251, 133, 0, 0.4);
+  transition: all 0.4s ease;
+}
+
+.feature-card:hover .icon-box {
+  transform: rotate(10deg) scale(1.05);
+  background: linear-gradient(135deg, #ffa500, #ff6d00);
+  box-shadow: 0 5px 20px rgba(255, 140, 0, 0.6);
+}
+
+/* 🏷️ Text Styling */
+.feature-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.feature-subtext {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* 📱 Responsive Tweaks */
+@media (max-width: 992px) {
+  .feature-card {
+    padding: 25px 15px;
+  }
+  .feature-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon-box {
+    width: 60px;
+    height: 60px;
+  }
+}

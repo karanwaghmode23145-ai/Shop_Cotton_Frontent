@@ -1,0 +1,151 @@
+/* ===== HERO SLIDER CONTAINER ===== */
+.category-slider {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== EACH SLIDE ===== */
+.slide {
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== OVERLAY FOR DARK FADE EFFECT ===== */
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65) 25%,
+    rgba(0, 0, 0, 0.25) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+}
+
+/* ===== SLIDE TEXT ===== */
+.slide-content {
+  position: relative;
+  z-index: 2;
+  padding-left: 8%;
+  max-width: 550px;
+  animation: fadeInUp 1.2s ease;
+}
+
+.slide-content h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.slide-content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #f1f1f1;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+/* ===== BUTTON ===== */
+.shop-btn {
+  display: inline-block;
+  background: #e63946;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.shop-btn:hover {
+  background: #fff;
+  color: #e63946;
+  border: 2px solid #e63946;
+  transform: scale(1.05);
+}
+
+/* ===== PAGINATION DOTS ===== */
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.7);
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e63946;
+  transform: scale(1.2);
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE STYLING ===== */
+@media (max-width: 992px) {
+  .slide {
+    height: 70vh;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .slide-content {
+    padding: 0 5%;
+  }
+
+  .slide-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .slide-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .category-slider {
+    height: 60vh;
+  }
+
+  .slide {
+    height: 60vh;
+  }
+
+  .slide-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .slide-content p {
+    font-size: 0.9rem;
+  }
+
+  .shop-btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+}

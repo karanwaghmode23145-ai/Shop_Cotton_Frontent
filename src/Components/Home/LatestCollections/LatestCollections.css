@@ -1,0 +1,121 @@
+.latest-collections {
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Collection Card ===== */
+.collection-card {
+  height: 380px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.collection-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Overlay ===== */
+.collection-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
+  transition: all 0.3s ease;
+}
+
+.collection-card:hover .collection-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.85)
+  );
+}
+
+/* ===== Text ===== */
+.collection-content {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  z-index: 2;
+  color: #fff;
+}
+
+.collection-content h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.collection-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+/* ===== Button ===== */
+.collection-btn {
+  display: inline-block;
+  background: #fff;
+  color: #e63946;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.collection-card:hover .collection-btn {
+  background: #e63946;
+  color: #fff;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .collection-card {
+    height: 320px;
+  }
+
+  .collection-content {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .collection-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .collection-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .collection-card {
+    height: 260px;
+  }
+
+  .collection-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .collection-btn {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+}

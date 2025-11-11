@@ -1,0 +1,62 @@
+.shop-page-wrapper {
+  background: #fafafa;
+}
+
+.filter-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.filter-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.filter-list li {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+.view-toggle .toggle-btn {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  margin-left: 8px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.view-toggle .toggle-btn.active {
+  background: #000;
+  color: #fff;
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.recent-thumb {
+  border-radius: 8px;
+}
+
+.list-view .product-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-view .card-img-top-wrapper {
+  flex: 0 0 200px;
+}
+
+.list-view .card-body {
+  text-align: left;
+  padding: 20px;
+}

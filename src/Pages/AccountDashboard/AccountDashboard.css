@@ -1,0 +1,74 @@
+/* 🌟 Account Dashboard */
+.account-dashboard {
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+/* 🧭 Dashboard Title */
+.dashboard-title {
+  font-weight: 800;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+/* 🧱 Sidebar */
+.dashboard-sidebar {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-link {
+  border: none;
+  background: transparent;
+  text-align: left;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background: #fff4e1;
+  color: #fb8500;
+}
+
+.sidebar-link.active {
+  background: linear-gradient(90deg, #ffb703, #fb8500);
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(251, 133, 0, 0.3);
+}
+
+/* 📦 Right Section */
+.col-lg-9 {
+  transition: all 0.3s ease;
+}
+
+/* 📱 Responsive */
+@media (max-width: 992px) {
+  .dashboard-sidebar {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 8px;
+  }
+
+  .sidebar-link {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  .content-card {
+    margin-top: 15px;
+  }
+}

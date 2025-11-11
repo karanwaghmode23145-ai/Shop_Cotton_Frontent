@@ -1,0 +1,37 @@
+.color-dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  transition: all 0.2s;
+}
+
+.active-color {
+  border: 2px solid #000;
+  transform: scale(1.1);
+}
+
+.size-btn {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.active-size {
+  background: black;
+  color: white;
+  border-color: black;
+}
+
+.related-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.related-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

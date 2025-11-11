@@ -1,0 +1,9 @@
+body {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  color: #333;
+}
+.header-logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}

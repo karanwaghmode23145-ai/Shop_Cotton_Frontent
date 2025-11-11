@@ -1,0 +1,32 @@
+.wishlist-wrapper {
+  background-color: #f9fafc;
+  min-height: 100vh;
+}
+
+.wishlist-card {
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.wishlist-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-img img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.wishlist-img img:hover {
+  transform: scale(1.05);
+}
+
+.wishlist-actions button {
+  min-width: 130px;
+  font-weight: 500;
+}
+
+.wishlist-price {
+  font-size: 1.1rem;
+}
